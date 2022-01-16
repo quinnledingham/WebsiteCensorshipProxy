@@ -1,9 +1,13 @@
 # Website Censorship Proxy
 A proxy that can a browser can connect to and it will block a website if it contains a keyword to be blocked. Only works with HTTP.  
+
+#### How it works
 First connects to the browser and receives a HTTP GET request from it.  
-Then it will connect to the web server in the request and sends the HTTP GET request and scans what is returned for the keywords it has stored.  
-If a keyword is found it sends a error screen.  
+Scans the request for keywords.  
+Then it will connect to the web server in the request and sends the HTTP GET request and scans what is returned for the keywords it has stored if body text search is turned on.  
+If a keyword is found at anytime it sends a error screen.  
   
+#### Manual
 The port number of the proxy can be changed by changing the definition of PROXYPORTNUM
   
 Blocks pages that contain certain keywords. By default "Floppy" and "SpongeBob" are keywords  
