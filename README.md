@@ -17,3 +17,5 @@ Can telnet into proxy to dynamically add and remove keywords.
 KEYWORDA+ adds a the word typed after the + to the list of blocked words.  
 KEYWORDD+ deletes the word typed after the + from the list of blocked words.  
 EXIT to close the connect. Needs to be done because there are no forks.  
+  
+Last worked on in 2021
