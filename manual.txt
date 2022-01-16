@@ -1,0 +1,24 @@
+compile: gcc main.c -o main
+run: ./main
+
+Can fulfill requests for the test pages from a web browser once the browsers proxy settings are correct.
+The port number of the proxy can be changed by changing the definition of PROXYPORTNUM.
+
+Blocks pages that contain certain keywords. By default "Floppy" and "SpongeBob" are keywords
+that are blocked.
+
+Can telnet into proxy to dynamically add and remove keywords.
+KEYWORDA+ adds a the word typed after the + to the list of blocked words.
+KEYWORDD+ deletes the word typed after the + from the list of blocked words.
+EXIT to close the connect. Needs to be done because there are no forks.
+
+Can turn on blocking based also on keywords in the body of an HTTP response by
+changing the if from 0 to 1.
+
+Can check the content type to see if the buffer contains an image. If it does it won't try to print
+the buffer to the console.
+
+I tested it at home on my desktop using GNOME Web as the browser. With this setup the proxy works
+with the test websites, blocking the page if the URL/body contains one of the keywords. Other websites
+it doesn't do to well, it's hard to tell if it should be able to handle a website or if the website
+is calling something it shouldn't know what to do with.
