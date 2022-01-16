@@ -1,8 +1,8 @@
 # Website Censorship Proxy
-A proxy that can a browser can connect to and it will block a website if it contains a keyword to be blocked. Only works with HTTP.
-First connects to the browser and receives a HTTP GET request from it.
-Then it will connect to the web server in the request and sends the HTTP GET request and scans what is returned for the keywords it has stored.
-If a keyword is found it sends a error screen.
+A proxy that can a browser can connect to and it will block a website if it contains a keyword to be blocked. Only works with HTTP.  
+First connects to the browser and receives a HTTP GET request from it.  
+Then it will connect to the web server in the request and sends the HTTP GET request and scans what is returned for the keywords it has stored.  
+If a keyword is found it sends a error screen.  
   
 The port number of the proxy can be changed by changing the definition of PROXYPORTNUM
   
