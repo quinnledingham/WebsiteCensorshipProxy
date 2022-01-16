@@ -1,5 +1,5 @@
 # Website Censorship Proxy
-A proxy that can a browser can connect to and it will block a website if it contains a keyword to be blocked. Only works with HTTP.  
+A proxy that can a browser can connect to and it will block a website if it contains a keyword to be blocked. Only works with HTTP. Implemented using sockect programming.  
 
 #### How it works
 First connects to the browser and receives a HTTP GET request from it.  
